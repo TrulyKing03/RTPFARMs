@@ -1,4 +1,5 @@
 com\example\rtpfarm\RTPService.class
+com\example\rtpfarm\FarmWorld1BiomeProvider.class
 com\example\rtpfarm\RTPFarmPlugin.class
 com\example\rtpfarm\JoinListener.class
 com\example\rtpfarm\FarmWorldCommand.class

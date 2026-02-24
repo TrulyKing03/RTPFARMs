@@ -10,6 +10,7 @@ worlds:
     name: farmworld1
     generate-structures: false
     sanitize-new-chunks: true
+    biome-lock-enabled: true
   farmworld2:
     name: farmworld2
     generate-structures: true
@@ -42,3 +43,4 @@ messages:
   reset-done: "&aFarmworld reset completed."
   menu-opened: "&aSelect your farmworld."
   join-teleport: "&aWelcome! You were teleported to a random farm location."
+

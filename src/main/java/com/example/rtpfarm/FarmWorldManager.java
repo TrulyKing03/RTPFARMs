@@ -111,6 +111,9 @@ public class FarmWorldManager {
 
         boolean structures = plugin.getConfig().getBoolean("worlds." + key + ".generate-structures", true);
         WorldCreator creator = WorldCreator.name(worldName).generateStructures(structures);
+        if (key.equalsIgnoreCase("farmworld1") && plugin.getConfig().getBoolean("worlds.farmworld1.biome-lock-enabled", true)) {
+            creator.biomeProvider(new FarmWorld1BiomeProvider());
+        }
         creator.environment(World.Environment.NORMAL);
         creator.type(WorldType.NORMAL);
         creator.createWorld();
