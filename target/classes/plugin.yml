@@ -1,0 +1,27 @@
+name: RTPFarm
+version: 1.0.0
+main: com.example.rtpfarm.RTPFarmPlugin
+api-version: '1.20'
+authors: [dumag]
+description: Farmworld system with join RTP, tree break optimization, daily reset, and world menu.
+
+commands:
+  farmworld:
+    description: Open Farmworld menu and admin controls.
+    usage: /farmworld [reload|reset|tp <farmworld1|farmworld2>]
+    permission: rtpfarm.use
+  rtp:
+    description: Teleport to a random farmworld location.
+    usage: /rtp [farmworld1|farmworld2]
+    permission: rtpfarm.use
+
+permissions:
+  rtpfarm.use:
+    description: Allows using farmworld commands and RTP.
+    default: true
+  rtpfarm.bypasscooldown:
+    description: Bypass random teleport cooldown.
+    default: op
+  rtpfarm.admin:
+    description: Allows reload/reset commands.
+    default: op

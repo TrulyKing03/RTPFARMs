@@ -1,0 +1,44 @@
+join-random-teleport: true
+join-teleport-delay-ticks: 40
+join-world: farmworld2
+
+daily-reset-hour: 2
+daily-reset-minute: 0
+
+worlds:
+  farmworld1:
+    name: farmworld1
+    generate-structures: false
+    sanitize-new-chunks: true
+  farmworld2:
+    name: farmworld2
+    generate-structures: true
+    sanitize-new-chunks: false
+
+rtp:
+  min-radius: 200
+  max-radius: 2500
+  cooldown-seconds: 30
+  max-attempts: 30
+  avoid-water: true
+  avoid-lava: true
+  safe-y-offset: 1
+
+tree-break:
+  enabled: true
+  max-blocks: 256
+  drop-items: true
+
+menu:
+  title: "&8Farmworld Selector"
+messages:
+  only-player: "&cOnly players can use this command."
+  no-permission: "&cYou do not have permission."
+  searching: "&eSearching for a safe location in &f%world%&e..."
+  success: "&aTeleported to &f%world%&a! X: &f%x% &aY: &f%y% &aZ: &f%z%"
+  failed: "&cCould not find a safe location. Try again."
+  cooldown: "&cYou must wait &f%seconds%s &cbefore using RTP again."
+  reloaded: "&aRTPFarm config reloaded."
+  reset-done: "&aFarmworld reset completed."
+  menu-opened: "&aSelect your farmworld."
+  join-teleport: "&aWelcome! You were teleported to a random farm location."
