@@ -1,4 +1,4 @@
-join-random-teleport: true
+﻿join-random-teleport: true
 join-teleport-delay-ticks: 40
 join-world: farmworld2
 
@@ -30,7 +30,7 @@ tree-break:
   drop-items: true
 
 menu:
-  title: "&8Farmworld Selector"
+  title: "&5&lAvertox.net"
 messages:
   only-player: "&cOnly players can use this command."
   no-permission: "&cYou do not have permission."
