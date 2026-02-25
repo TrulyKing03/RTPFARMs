@@ -1,4 +1,4 @@
-﻿join-random-teleport: true
+join-random-teleport: true
 join-teleport-delay-ticks: 40
 join-world: farmworld2
 
@@ -17,6 +17,7 @@ worlds:
     sanitize-new-chunks: false
 
 rtp:
+  only-loaded-chunks: true
   min-radius: 200
   max-radius: 2500
   cooldown-seconds: 30
@@ -43,4 +44,3 @@ messages:
   reset-done: "&aFarmworld reset completed."
   menu-opened: "&aSelect your farmworld."
   join-teleport: "&aWelcome! You were teleported to a random farm location."
-
