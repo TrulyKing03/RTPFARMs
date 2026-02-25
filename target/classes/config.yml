@@ -1,4 +1,4 @@
-join-random-teleport: true
+﻿join-random-teleport: true
 join-teleport-delay-ticks: 40
 join-world: farmworld2
 
@@ -17,7 +17,7 @@ worlds:
     sanitize-new-chunks: false
 
 rtp:
-  only-loaded-chunks: true
+  only-loaded-chunks: false
   min-radius: 200
   max-radius: 2500
   cooldown-seconds: 30

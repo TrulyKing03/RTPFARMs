@@ -66,7 +66,7 @@ public class RTPService {
         int yOffset = plugin.getConfig().getInt("rtp.safe-y-offset", 1);
         boolean avoidWater = plugin.getConfig().getBoolean("rtp.avoid-water", true);
         boolean avoidLava = plugin.getConfig().getBoolean("rtp.avoid-lava", true);
-        boolean onlyLoadedChunks = plugin.getConfig().getBoolean("rtp.only-loaded-chunks", true);
+        boolean onlyLoadedChunks = plugin.getConfig().getBoolean("rtp.only-loaded-chunks", false);
 
         for (int attempt = 0; attempt < maxAttempts; attempt++) {
             int x = randomCoordinate(minRadius, maxRadius) * (ThreadLocalRandom.current().nextBoolean() ? -1 : 1);
