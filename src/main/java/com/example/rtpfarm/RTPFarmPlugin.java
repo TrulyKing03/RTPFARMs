@@ -33,7 +33,6 @@ public class RTPFarmPlugin extends JavaPlugin {
         PluginManager pluginManager = Bukkit.getPluginManager();
         pluginManager.registerEvents(new FarmWorldMenuListener(menu), this);
         pluginManager.registerEvents(new JoinListener(this, worldManager, rtpService), this);
-        pluginManager.registerEvents(new TreeBreakListener(this, worldManager), this);
         pluginManager.registerEvents(new FarmWorldChunkSanitizer(worldManager), this);
     }
 
